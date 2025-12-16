@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Systèmes Embarqués & IA | Master IA</title>
+    <meta name="description" content="Cours complet de systèmes embarqués et intelligence artificielle pour le Master IA">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <div class="logo">
+                    <i class="fas fa-microchip"></i>
+                    <span>SE & IA</span>
+                </div>
+                <div class="nav-subtitle">ABDERRAHIM ES-SOUSY</div>
+            </div>
+            
+            <div class="nav-menu">
+                <a href="#accueil" class="nav-link active">
+                    <i class="fas fa-home"></i>
+                    <span>Accueil</span>
+                </a>
+                <a href="#cours" class="nav-link">
+                    <i class="fas fa-book"></i>
+                    <span>Cours</span>
+                </a>
+                <a href="#arduino" class="nav-link">
+                    <i class="fas fa-code"></i>
+                    <span>Arduino</span>
+                </a>
+                <a href="#quiz" class="nav-link">
+                    <i class="fas fa-brain"></i>
+                    <span>Quiz</span>
+                </a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Systèmes <span class="highlight">Embarqués</span><br>
+                    & Intelligence <span class="highlight">Artificielle</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Cours complet du Master IA - Université Cadi Ayyad
+                </p>
+                <div class="hero-actions">
+                    <a href="#cours" class="btn btn-primary">
+                        <i class="fas fa-play"></i> Commencer le cours
+                    </a>
+                    <a href="#quiz" class="btn btn-outline">
+                        <i class="fas fa-brain"></i> Tester mes connaissances
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">4</div>
+                        <div class="stat-label">Chapitres</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">200+</div>
+                        <div class="stat-label">Questions</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">40+</div>
+                        <div class="stat-label">Exercices</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Pratique</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-preview">
+                    <div class="code-header">
+                        <div class="code-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="code-title">arduino.ino</div>
+                    </div>
+                    <pre class="code-content"><code>void setup() {
+  pinMode(LED_BUILTIN, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(LED_BUILTIN, HIGH);
+  delay(1000);
+  digitalWrite(LED_BUILTIN, LOW);
+  delay(1000);
+}</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cours Section -->
+    <section id="cours" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contenu du Cours</h2>
+                <p class="section-subtitle">Structure pédagogique complète</p>
+            </div>
+            
+            <div class="chapters-grid">
+                <!-- Chapitre 1 -->
+                <div class="chapter-card">
+                    <div class="chapter-number">01</div>
+                    <div class="chapter-content">
+                        <h3 class="chapter-title">Introduction aux SE</h3>
+                        <p class="chapter-desc">Définitions, caractéristiques, historique et applications</p>
+                        <div class="chapter-meta">
+                            <span class="meta-item">
+                                <i class="fas fa-clock"></i> 4h
+                            </span>
+                            <span class="meta-item">
+                                <i class="fas fa-question-circle"></i> 50 Q
+                            </span>
+                        </div>
+                        <button class="btn btn-sm btn-outline" data-chapter="1">
+                            Voir leçon
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Chapitre 2 -->
+                <div class="chapter-card">
+                    <div class="chapter-number">02</div>
+                    <div class="chapter-content">
+                        <h3 class="chapter-title">Architecture des SE</h3>
+                        <p class="chapter-desc">Composants matériels et logiciels</p>
+                        <div class="chapter-meta">
+                            <span class="meta-item">
+                                <i class="fas fa-clock"></i> 6h
+                            </span>
+                            <span class="meta-item">
+                                <i class="fas fa-question-circle"></i> 50 Q
+                            </span>
+                        </div>
+                        <button class="btn btn-sm btn-outline" data-chapter="2">
+                            Voir leçon
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Chapitre 3 -->
+                <div class="chapter-card">
+                    <div class="chapter-number">03</div>
+                    <div class="chapter-content">
+                        <h3 class="chapter-title">Microcontrôleurs</h3>
+                        <p class="chapter-desc">Types, architectures et applications</p>
+                        <div class="chapter-meta">
+                            <span class="meta-item">
+                                <i class="fas fa-clock"></i> 5h
+                            </span>
+                            <span class="meta-item">
+                                <i class="fas fa-question-circle"></i> 50 Q
+                            </span>
+                        </div>
+                        <button class="btn btn-sm btn-outline" data-chapter="3">
+                            Voir leçon
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Chapitre 4 -->
+                <div class="chapter-card">
+                    <div class="chapter-number">04</div>
+                    <div class="chapter-content">
+                        <h3 class="chapter-title">Arduino - Bases</h3>
+                        <p class="chapter-desc">Programmation et concepts fondamentaux</p>
+                        <div class="chapter-meta">
+                            <span class="meta-item">
+                                <i class="fas fa-clock"></i> 8h
+                            </span>
+                            <span class="meta-item">
+                                <i class="fas fa-question-circle"></i> 50 Q
+                            </span>
+                        </div>
+                        <button class="btn btn-sm btn-outline" data-chapter="4">
+                            Voir leçon
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leçon Modale -->
+    <div class="modal" id="lessonModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modalTitle">Introduction aux SE</h3>
+                <button class="modal-close" id="modalClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body" id="modalContent">
+                <!-- Contenu chargé dynamiquement -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Arduino Section -->
+    <section id="arduino" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Programmation Arduino</h2>
+                <p class="section-subtitle">Fonctions essentielles et exemples pratiques</p>
+            </div>
+            
+            <div class="functions-grid">
+                <!-- Fonction 1 -->
+                <div class="function-card">
+                    <div class="function-header">
+                        <div class="function-icon">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <h4 class="function-title">setup()</h4>
+                    </div>
+                    <div class="function-body">
+                        <p class="function-desc">Initialisation exécutée une fois au démarrage.</p>
+                        <div class="function-syntax">
+                            <code>void setup() { ... }</code>
+                        </div>
+                        <div class="function-example">
+                            <pre><code>void setup() {
+  pinMode(13, OUTPUT);
+  Serial.begin(9600);
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fonction 2 -->
+                <div class="function-card">
+                    <div class="function-header">
+                        <div class="function-icon">
+                            <i class="fas fa-infinity"></i>
+                        </div>
+                        <h4 class="function-title">loop()</h4>
+                    </div>
+                    <div class="function-body">
+                        <p class="function-desc">Boucle principale exécutée continuellement.</p>
+                        <div class="function-syntax">
+                            <code>void loop() { ... }</code>
+                        </div>
+                        <div class="function-example">
+                            <pre><code>void loop() {
+  digitalWrite(13, HIGH);
+  delay(1000);
+  digitalWrite(13, LOW);
+  delay(1000);
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fonction 3 -->
+                <div class="function-card">
+                    <div class="function-header">
+                        <div class="function-icon">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                        <h4 class="function-title">pinMode()</h4>
+                    </div>
+                    <div class="function-body">
+                        <p class="function-desc">Configure une broche en entrée ou sortie.</p>
+                        <div class="function-syntax">
+                            <code>pinMode(pin, mode)</code>
+                        </div>
+                        <div class="function-example">
+                            <pre><code>pinMode(13, OUTPUT);  // Sortie
+pinMode(2, INPUT);     // Entrée
+pinMode(3, INPUT_PULLUP); // Entrée avec pull-up</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fonction 4 -->
+                <div class="function-card">
+                    <div class="function-header">
+                        <div class="function-icon">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <h4 class="function-title">digitalWrite()</h4>
+                    </div>
+                    <div class="function-body">
+                        <p class="function-desc">Écrit une valeur HIGH ou LOW sur une broche.</p>
+                        <div class="function-syntax">
+                            <code>digitalWrite(pin, value)</code>
+                        </div>
+                        <div class="function-example">
+                            <pre><code>digitalWrite(13, HIGH); // Allume
+digitalWrite(13, LOW);  // Éteint</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fonction 5 -->
+                <div class="function-card">
+                    <div class="function-header">
+                        <div class="function-icon">
+                            <i class="fas fa-arrow-left"></i>
+                        </div>
+                        <h4 class="function-title">digitalRead()</h4>
+                    </div>
+                    <div class="function-body">
+                        <p class="function-desc">Lit l'état d'une broche d'entrée.</p>
+                        <div class="function-syntax">
+                            <code>digitalRead(pin)</code>
+                        </div>
+                        <div class="function-example">
+                            <pre><code>int state = digitalRead(2);
+if (state == HIGH) {
+  // Bouton appuyé
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fonction 6 -->
+                <div class="function-card">
+                    <div class="function-header">
+                        <div class="function-icon">
+                            <i class="fas fa-wave-square"></i>
+                        </div>
+                        <h4 class="function-title">analogWrite()</h4>
+                    </div>
+                    <div class="function-body">
+                        <p class="function-desc">Génère un signal PWM (0-255).</p>
+                        <div class="function-syntax">
+                            <code>analogWrite(pin, value)</code>
+                        </div>
+                        <div class="function-example">
+                            <pre><code>analogWrite(9, 128); // PWM 50%
+analogWrite(10, 255); // PWM 100%</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fonction 7 -->
+                <div class="function-card">
+                    <div class="function-header">
+                        <div class="function-icon">
+                            <i class="fas fa-signal"></i>
+                        </div>
+                        <h4 class="function-title">analogRead()</h4>
+                    </div>
+                    <div class="function-body">
+                        <p class="function-desc">Lit une valeur analogique (0-1023).</p>
+                        <div class="function-syntax">
+                            <code>analogRead(pin)</code>
+                        </div>
+                        <div class="function-example">
+                            <pre><code>int sensor = analogRead(A0);
+float voltage = sensor * (5.0 / 1023.0);</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fonction 8 -->
+                <div class="function-card">
+                    <div class="function-header">
+                        <div class="function-icon">
+                            <i class="fas fa-hourglass-half"></i>
+                        </div>
+                        <h4 class="function-title">delay()</h4>
+                    </div>
+                    <div class="function-body">
+                        <p class="function-desc">Pause en millisecondes.</p>
+                        <div class="function-syntax">
+                            <code>delay(ms)</code>
+                        </div>
+                        <div class="function-example">
+                            <pre><code>delay(1000);  // 1 seconde
+delay(500);   // 0.5 seconde</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quiz" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Quiz d'Évaluation</h2>
+                <p class="section-subtitle">Testez vos connaissances avec 200+ questions</p>
+            </div>
+            
+            <div class="quiz-interface">
+                <div class="quiz-sidebar">
+                    <div class="quiz-categories" id="quizCategories">
+                        <!-- Catégories chargées dynamiquement -->
+                    </div>
+                    
+                    <div class="quiz-progress">
+                        <h4>Votre progression</h4>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="quizProgressFill"></div>
+                        </div>
+                        <div class="progress-text">
+                            <span id="quizProgressText">0% complété</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="quiz-main">
+                    <div class="quiz-welcome" id="quizWelcome">
+                        <div class="quiz-welcome-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Sélectionnez une catégorie</h3>
+                        <p>Choisissez un thème pour commencer le quiz</p>
+                    </div>
+                    
+                    <div class="quiz-question" id="quizQuestion" style="display: none;">
+                        <div class="question-header">
+                            <span class="question-theme" id="questionTheme"></span>
+                            <span class="question-number" id="questionNumber"></span>
+                        </div>
+                        <h3 class="question-text" id="questionText"></h3>
+                        
+                        <div class="question-options" id="questionOptions">
+                            <!-- Options chargées dynamiquement -->
+                        </div>
+                        
+                        <div class="question-feedback" id="questionFeedback" style="display: none;">
+                            <div class="feedback-content" id="feedbackContent"></div>
+                            <button class="btn btn-sm btn-outline" id="nextQuestionBtn">
+                                <i class="fas fa-arrow-right"></i> Suivant
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-results" id="quizResults" style="display: none;">
+                        <div class="results-card">
+                            <div class="results-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <h3>Quiz Terminé !</h3>
+                            <div class="results-score">
+                                <div class="score-circle">
+                                    <span id="finalScore">0</span>%
+                                </div>
+                                <p class="score-text">
+                                    <span id="correctAnswers">0</span> / <span id="totalQuestions">0</span> réponses correctes
+                                </p>
+                            </div>
+                            <div class="results-actions">
+                                <button class="btn btn-primary" id="restartQuizBtn">
+                                    <i class="fas fa-redo"></i> Recommencer
+                                </button>
+                                <button class="btn btn-outline" id="newCategoryBtn">
+                                    <i class="fas fa-list"></i> Nouvelle catégorie
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="data.js"></script>
+    <script src="course-content.js"></script>
+    <script src="quiz.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
